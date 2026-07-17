@@ -4,6 +4,7 @@ pipeline {
     environment {
         AWS_REGION = 'ap-south-1'
         ACCOUNT_ID = '258274811560'
+        AWS_CREDS = credentials('siraj-aws-ecr-credentials')
 
         ECR_REPO_FRONTEND      = 'streaming-frontend'
         ECR_ADMIN_SERVICE      = 'admin-service'
